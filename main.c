@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 int mult(int x, int y);
+int sub(int x, int y);
 
 int main(int argc, char *argv[]) {
 
@@ -14,7 +15,7 @@ int main(int argc, char *argv[]) {
     int a = atoi(argv[1]);
     int b = atoi(argv[2]);
 
-    printf("a - b = %d\n", a-b);
+    printf("%d - %d = %d\n", a, b, sub(a, b));
     printf("%d * %d = %d\n", a, b, mult(a, b));
 
     return 0;
