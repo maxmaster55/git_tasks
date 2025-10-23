@@ -1,6 +1,24 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include "modulus.h"
 
-int main(){
+int mult(int x, int y);
+int sub(int x, int y);
 
+int main(int argc, char *argv[]) {
+
+    // check: got two arguments
+    if (argc != 3) {
+        printf("please enter 2 arguments to do calculation\n");
+        return 1;
+    }
+
+    int a = atoi(argv[1]);
+    int b = atoi(argv[2]);
+
+    printf("%d - %d = %d\n", a, b, sub(a, b));
+    printf("%d * %d = %d\n", a, b, mult(a, b));
+    printf("%"PRId64" mod %"PRId64" = %"PRId64"\n", (int64_t)a, (int64_t)b, mod_func((int64_t)a, (int64_t)b));
+    
     return 0;
 }
