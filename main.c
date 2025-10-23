@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "division.h"
 #include "modulus.h"
 
 int mult(int x, int y);
@@ -18,6 +19,7 @@ int main(int argc, char *argv[]) {
 
     printf("%d - %d = %d\n", a, b, sub(a, b));
     printf("%d * %d = %d\n", a, b, mult(a, b));
+    printf("%d / %d = %d\n", a, b, division(a, b));
     printf("%"PRId64" mod %"PRId64" = %"PRId64"\n", (int64_t)a, (int64_t)b, mod_func((int64_t)a, (int64_t)b));
     
     return 0;
