@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "division.h"
 
 int mult(int x, int y);
 int sub(int x, int y);
+int division(int x, int y);
 
 int main(int argc, char *argv[]) {
 
