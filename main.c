@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "division.h"
-#include "modulus.h"
+#include <inttypes.h>
 
 int add(int x, int y);
 int mult(int x, int y);
 int sub(int x, int y);
+int division(int x, int y);
+int64_t mod_func(int64_t a, int64_t n);
 
 int main(int argc, char *argv[]) {
 

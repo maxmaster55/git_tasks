@@ -1,6 +1,6 @@
 # git_tasks
 
-how to use you ask?
+how to use your task?
 
 - just compile using this command:
 ```bash
